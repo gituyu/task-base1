@@ -1,0 +1,40 @@
+.lead {
+  font-size: $font-size-4;
+  font-weight: $fw-thin;
+  line-height: $lead-line-height;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  th {
+    @include padding($gutter-sm);
+    @include border-width(0 0 1px);
+    @include border-style(solid);
+    @include border-color(#cecedc);
+    background: #fff;
+    text-transform: capitalize;
+  }
+  th, td {
+    @include container;
+    @include padding($gutter-sm);
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+  td {
+    border-bottom: 1px solid rgba(206, 206, 220, .5);
+  }
+  tr {
+    th, td {
+      &:first-child {
+        @include span(1 of 4);
+        float: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@mixin font-style-small {
+  font-size: $fs-small;
+  line-height: $lh-small;
+  font-weight: $fw-regular;
+  opacity: .75;
+}
+
+@mixin font-style-regular {
+  font-size: $fs-regular;
+  line-height: $lh-regular;
+  font-weight: $fw-regular;
+}
+
+@mixin font-style-medium {
+  font-size: $fs-medium;
+  line-height: $lh-medium;
+  font-weight: $fw-thin;
+}
+
+@mixin font-style-large {
+  font-size: $fs-large;
+  line-height: $lh-large;
+  font-weight: $fw-bold;
+}
+
+@mixin font-style-xl {
+  font-size: $fs-xl;
+  line-height: $lh-xl;
+  font-weight: $fw-bold;
+}
+
+@mixin font-style-xxl {
+  font-size: $fs-xxl;
+  line-height: $lh-xxl;
+  font-weight: $fw-thin;
+}
+
+@mixin font-style-display {
+  font-size: $fs-display;
+  line-height: $lh-display;
+  font-weight: $fw-thin;
+}

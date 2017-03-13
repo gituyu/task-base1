@@ -1,0 +1,52 @@
+.title {
+  @include container;
+  @include clearfix;
+  @include font-style-medium;
+  margin: $lh-small 0;
+  padding: $lh-small 0 0;
+  color: $primary-color;
+  text-align: center;
+  width: 100%;
+}
+
+.title-page {
+  @extend .title;
+  @include font-style-xxl;
+  margin-top: 10%;
+}
+
+.section-title {
+}
+
+// Default header
+.md-subheader {
+  .md-subheader-inner {
+    padding-top: $base-line-height;
+    padding-bottom: $base-line-height/2;
+  }
+  .md-subheader-content {
+    @include font-style-medium;
+    color: $primary-color;
+  }
+}
+
+// Sticky header
+.md-subheader-wrapper {
+  background: #fff;
+
+  &.md-sticky-clone {
+    .md-subheader-inner {
+      padding-top: $base-line-height;
+      padding-bottom: $base-line-height;
+    }
+  }
+
+  .md-subheader-inner {
+  }
+}
+
+section + section {
+  .md-header {
+    padding-top: $base-line-height*2;
+  }
+}

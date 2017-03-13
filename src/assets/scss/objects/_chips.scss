@@ -1,0 +1,20 @@
+.md-chips {
+  md-chip {
+    background-color: $primary-color-light;
+    color: $primary-color-dark;
+    box-shadow: none;
+    height: auto;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $primary-color-text;
+    }
+  }
+}
+
+md-chips .md-chips {
+  @include font-style-small;
+  opacity: 1;
+  box-shadow: none;
+  padding-left: 0;
+}

@@ -1,0 +1,45 @@
+.page-landing {
+  md-toolbar {
+    @include position(absolute, 0 0 auto 0);
+    z-index: 5;
+    background: transparent;
+
+    md-icon {
+      color: inherit;
+      line-height: $base-line-height;
+      height: $base-line-height;
+    }
+    .md-button, .menu-item, md-input-container {
+      display: inline-block;
+      color: $primary-color-text;
+      line-height: $base-line-height;
+      margin: $base-line-height/2 $md-toolbar-padding/2;
+      padding: $md-toolbar-padding/2;
+
+      min-height: $base-line-height;
+      height: auto;
+    }
+
+    // Logo
+    logo {
+      background: $primary-color-light;
+
+      .md-button {
+        md-icon {
+          width: 96px;
+        }
+      }
+    }
+  }
+  .md-subheader {
+    @include container(90%);
+
+    .md-subheader-inner {
+      margin: $lh-small 0;
+      padding: $lh-small 0 0;
+    }
+    .md-subheader-content {
+      text-align: center;
+    }
+  }
+}

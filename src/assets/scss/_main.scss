@@ -1,0 +1,53 @@
+// fonts
+//@import "//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en";
+// fonts
+// bower:scss
+//@import "../../../bower_components/bourbon/app/bootstrap-sass/stylesheets/_bourbon.scss";
+//@import "../../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+//@import "../../../bower_components/susy/sass/susy";
+/****************************************************************************************/
+@import /* SETTINGS  :GLOBAL VARIABLES  */
+"settings/borders",
+"settings/breakpoints",
+"settings/colors",
+  //"settings/grid",
+  //"settings/material",
+  //"settings/typography",
+
+  /* TOOLS: Reusable functions for developers */
+"tools/mixins",
+"tools/material",
+  /****************************************************************************************/
+
+  /* NORMALIZE :Acts as Fallback Too */
+"generic/box-sizing",
+"generic/reset",
+  /* ELEMENTS: Starts things afresh cross */
+  //"elements/typography";
+
+  /****************************************************************************************/
+
+  /* OBJECTS: Atomic level classes */
+  //  "objects/buttons",
+  //  "objects/chips",
+  //  "objects/forms",
+  //  "objects/headings",
+  //  "objects/icons",
+  //  "objects/layout",
+  //  "objects/lists",
+  //  "objects/nav",
+  //  "objects/select",
+  //  "objects/tags",
+  //  "objects/typography",
+  //
+  //  /*  COMPONENTS: Contains general/basic class rule-set */
+  //"components/nav";
+  //"components/booking-form",
+  //"components/card",
+  //"components/cardbox",
+  //  "components/slick",
+  //
+  //  "components/cover",
+  //  "components/dock",
+  //  "components/pages";
+"generic/_simple-grid";

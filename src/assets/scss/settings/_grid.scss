@@ -1,0 +1,38 @@
+///************** Global Grid Setting **************/
+$columns: 12;
+$gutter: 4%;
+$gutter-xs: $gutter/4;
+$gutter-sm: $gutter/2;
+$gutter-lg: $gutter*2;
+
+///**************************************************   SPECIFIC   *****************************************************
+//Choose by your preference
+///************** Simple- Grids -simple container,row,classes,col-*-(sm / lg / md for small large medium screen) ******/
+$width: 100%;
+$container-width: 100%;
+$container-left: auto;
+$container-right: auto;
+
+///************** MD- Grids -contains container,row,column(col.*. m/l for mobile/large screen),pull,push**************/
+
+$element-top-margin: $gutter/3 !default;
+$element-bottom-margin: ($gutter*2)/3 !default;
+
+///*************** Susy ***************/
+@import "susy";
+$susy: (
+        container: auto,
+        container-position: center,
+        columns: $columns,
+  //columns-width: 90px,
+        gutters: 1/4,
+        global-box-sizing: border-box,
+        gutter-position: inside,
+  //spread:narrow,
+        output: float,
+        debug: (image: show),
+);
+
+@include border-box-sizing;
+
+

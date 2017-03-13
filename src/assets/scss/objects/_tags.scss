@@ -1,0 +1,16 @@
+.tag {
+  display: inline-block;
+  padding: $base-line-height/4 $base-line-height/2;
+  background: rgba(242, 242, 242, .5);
+  color: $primary-text-color;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.tags {
+  padding: 0;
+  margin: 0;
+  .tag {
+    margin-right: $base-line-height/2;
+  }
+}

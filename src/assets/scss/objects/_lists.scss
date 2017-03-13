@@ -1,0 +1,29 @@
+md-list {
+  md-list-item {
+  }
+
+  // With Bullets
+  &.list__bullets {
+    md-list-item {
+      align-items: flex-start;
+      min-height: $base-line-height;
+      margin-bottom: $base-line-height/2;
+
+      &:before {
+        content: '\f111';
+        font-family: FontAwesome;
+        color: $primary-color;
+        font-size: $base-line-height/3;
+
+        // Create space for content
+        margin-right: $base-line-height;
+
+        // Overide visibility
+        visibility: visible;
+
+        // Allow positioning of content to the center
+        min-height: auto;
+      }
+    }
+  }
+}

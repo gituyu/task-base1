@@ -1,0 +1,50 @@
+/*----------- home - index.html -----------------*/
+header {
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+
+.nav {
+  @include susy-clearfix;
+  @include container($susy);
+  float: left;
+  display: inline-block;
+  height: 96px;
+  background-color: blue;
+
+}
+
+.brand-logo {
+  @include span(4 of 12);
+  background-color: pink;
+  display: inline-block;
+}
+
+.navbar {
+  @include span(7 of 12);
+  height: 96px;
+  background-color: #4CAF50;
+}
+
+.member {
+  @include span(2 of 12);
+}
+
+@include nested(7) {
+  ul, li {
+    @include span(6 wide);
+    background-color: #428bca;
+  }
+  .search {
+    @include span(1 last);
+    background-color: #9ca473;
+  }
+}
+
+.cover-title {
+  @include container;
+
+}
+

@@ -1,0 +1,108 @@
+.cover {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  letter-spacing: .5px;
+
+  .slick-slider {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    z-index: 0;
+
+    // Slider container
+    .slick-list {
+      @include container;
+      margin: 0;
+      z-index: 0;
+    }
+
+    // Arrows
+    .slick-prev, .slick-next {
+      z-index: 50;
+      color: inherit;
+
+      &:before {
+        color: inherit;
+      }
+    }
+
+    // Slide
+    .slide {
+      .slide__img {
+        &:before {
+          @include position(absolute, 0 0 0 0);
+          z-index: 5;
+          content: '';
+          background: rgba($chip-bg-color, .5);
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .slide__caption {
+          padding-bottom: 10*$md-toolbar-padding;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .cover__header,
+  .cover__footer {
+    background: transparent;
+  }
+
+  .cover__footer {
+    @include position(absolute, auto 0 0 0);
+    z-index: 5;
+    width: 100%;
+    height: 10*$md-toolbar-padding;
+    overflow: hidden;
+
+    .layout-padding {
+      padding-bottom: 0;
+
+      .card__holder {
+        padding-bottom: 0;
+      }
+    }
+    .card__holder {
+      width: calc(100% / 4);
+    }
+    md-card {
+      height: 7*$md-toolbar-padding;
+      box-shadow: $whiteframe-shadow-3dp;
+
+      md-card-title {
+        padding-top: $base-line-height/2;
+        padding-bottom: $base-line-height/2;
+
+        md-card-title-text {
+          .card__c-title {
+            font-size: $fs-medium;
+          }
+          .card__c-meta {
+            padding: $base-line-height/6 0;
+          }
+        }
+      }
+
+      &:before {
+        background: rgba(102, 51, 51, .75);
+      }
+
+      &:hover {
+        height: 9*$md-toolbar-padding;
+      }
+    }
+    .card__holder {
+      md-card {
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "compass/css3/font-face";
+
+@include font-face("Roboto Thin",
+        font-files(
+                        "roboto/Roboto-Thin.woff2",
+                        "roboto/Roboto-Thin.woff",
+                        "roboto/Roboto-Thin.ttf",
+                        "roboto/Roboto-Thin.svg"),
+        "roboto/Roboto-Thin.eot?#iefix",
+        200);
+@include font-face("Roboto Light",
+        font-files(
+                        "roboto/Roboto-Light.woff2",
+                        "roboto/Roboto-Light.woff",
+                        "roboto/Roboto-Light.ttf",
+                        "roboto/Roboto-Light.svg"),
+        "roboto/Roboto-Light.eot?#iefix",
+        300
+);
+@include font-face("Roboto Regular",
+        font-files(
+                        "roboto/Roboto-Regular.woff2",
+                        "roboto/Roboto-Regular.woff",
+                        "roboto/Roboto-Regular.ttf",
+                        "roboto/Roboto-Regular.svg"),
+        "roboto/Roboto-Regular.eot?#iefix",
+        400
+);
+@include font-face("Roboto Medium",
+        font-files(
+                        "roboto/Roboto-Medium.woff2",
+                        "roboto/Roboto-Medium.woff",
+                        "roboto/Roboto-Medium.ttf",
+                        "roboto/Roboto-Medium.svg"),
+        "roboto/Roboto-Medium.eot?#iefix",
+        500
+);
+@include font-face("Roboto Bold",
+        font-files(
+                        "roboto/Roboto-Bold.woff2",
+                        "roboto/Roboto-Bold.woff",
+                        "roboto/Roboto-Bold.ttf",
+                        "roboto/Roboto-Bold.svg"),
+        "roboto/Roboto-Bold.eot?#iefix",
+        700
+);

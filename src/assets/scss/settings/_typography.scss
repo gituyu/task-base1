@@ -1,0 +1,52 @@
+// Font sizes
+$fs-small: .875em;
+$fs-regular: 16px;
+$fs-medium: 20px;
+$fs-large: 24px;
+$fs-xl: 34px;
+$fs-xxl: 45px;
+$fs-display: 56px;
+
+$fs-icon: 18px !important;
+
+// Line Heights
+$lh-xs: 18px;
+$lh-small: 21px;
+$lh-regular: 24px;
+$lh-medium: 28px;
+$lh-large: 32px;
+$lh-xl: 40px;
+$lh-xxl: 64px;
+$lh-display: 56px;
+
+// Font Weights
+$fw-thin: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+// Font-sizes
+$font-size-1: 2.074em;
+$font-size-2: 1.728em;
+$font-size-3: 1.44em;
+$font-size-4: 1.2em;
+
+// Base Settings
+$base-font-family: 'roboto';
+$base-font-size: $fs-regular;
+$base-line-height: $lh-regular;
+$lead-line-height: 28px;
+
+//  Header-sizes
+$h1-fontsize: $font-size-1;
+$h2-fontsize: $font-size-2;
+$h3-fontsize: $font-size-2;
+$h4-fontsize: $font-size-3;
+$h5-fontsize: $font-size-4;
+$h6-fontsize: $font-size-4;
+
+//  Flow-Text
+//$intervals:2px;
+//$interval-size:2px;
+
+$navbar-height: 20px;
+$navbar-brand-font-size: $font-size-2;

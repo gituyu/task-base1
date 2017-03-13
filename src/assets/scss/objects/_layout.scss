@@ -1,0 +1,54 @@
+.row {
+  @include breakpoint($tablet) {
+    @include display(flex);
+    flex-flow: row nowrap;
+  }
+  @include container;
+  @include clearfix;
+  width: 100%;
+}
+
+.col {
+  @include span(1 of $columns);
+  background-color: #ee9e9c;
+  height: 10px;
+}
+
+// Create columns of various sizes
+@for $i from 1 through $columns {
+  @for $j from 1 through $i {
+    .col__#{$j}-#{$i} {
+      width: 100%;
+      @media(min-width: 768px) {
+        width: ($j/$i)*100%;
+      }
+    }
+  }
+}
+
+.container {
+  @include container(90%);
+  width: 100%;
+  padding: $gutter;
+  @include clearfix;
+}
+
+.container-fluid {
+  @extend .container;
+  @include container(100%)
+}
+
+.container-medium {
+  @extend .container;
+  @include container(75%);
+}
+
+.container-small {
+  @extend .container;
+  @include container(50%);
+}
+
+.wrapper {
+  @include container;
+  padding: $gutter;
+}

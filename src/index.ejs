@@ -1,0 +1,18 @@
+<button class="primary-menu__button">Toggle Navigation</button>
+
+<nav class="nav">
+    <ul class="primary-menu">
+        <li class="menu-item <%- current.source == 'index' ? 'current-menu-item' : ''; %>"><a href="#">Home</a></li>
+        <li class="menu-item <%- current.source == 'index' ? 'current-menu-item' : ''; %>"><a href="#">About Us</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Community Involvement</a></li>
+                <li><a href="#">Job Opportunities</a></li>
+            </ul>
+        </li>
+        <li class="menu-item <%- current.source == 'index' ? 'current-menu-item' : ''; %>"><a href="#">Services</a></li>
+        <li class="menu-item <%- current.source == 'index' ? 'current-menu-item' : ''; %>"><a href="#">Products</a></li>
+        <li class="menu-item <%- current.source == 'index' ? 'current-menu-item' : ''; %>"><a href="#">Contact</a></li>
+    </ul>
+</nav>

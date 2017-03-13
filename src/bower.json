@@ -1,0 +1,24 @@
+{
+  "name": "TASK",
+  "description": "",
+  "main": "",
+  "keywords": [],
+  "authors": [
+    "wearearchangel.com"
+  ],
+  "license": "MIT",
+  "homepage": "wearearchangelcom",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12",
+    "breakpoint": "4.6.4",
+    "jquery": "*"
+  }
+}

@@ -1,0 +1,17 @@
+.navbar {
+  //    @extend .nav;
+  //    width: inherit;
+  //    @include clearfix;
+}
+
+.brand-logo {
+  padding: {
+    //padding is two column width
+    left: span(1);
+    right: auto;
+  }
+}
+
+md-fab-toolbar .md-fab-toolbar-wrapper {
+  height: 100%;
+}

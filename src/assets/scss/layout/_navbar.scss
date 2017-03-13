@@ -1,0 +1,101 @@
+/* Variables */
+$color1: #FFFFFF;
+$color2: #FF4CA5;
+$color3: #ff007f;
+$color4: #7F2653;
+$color5: #CC0066;
+$color6: #031f38;
+
+@include border-box-sizing;
+
+* {
+  font-family: "Helvetica", sans-serif;
+}
+
+main {
+  background-color: $color1;
+  height: 758px;
+}
+
+header, article, aside {
+  margin-bottom: gutter();
+}
+
+header {
+  padding: 2em;
+  background-color: $color2;
+}
+
+article {
+  @include span(8);
+  background-color: $color3;
+
+}
+
+.card {
+  height: 300px;
+  padding-bottom: gutter();
+  padding-top: gutter();
+}
+
+aside {
+  @include span(3 last);
+  //padding: 2em;
+  height: 100%;
+  background-color: $color5;
+}
+
+footer {
+  clear: both;
+  padding: 2em;
+  background-color: $color4;
+}
+
+/*----------- home - index.html -----------------*/
+header {
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+
+.nav {
+  @include susy-clearfix;
+  @include container($susy);
+  display: inline-block;
+  height: 96px;
+  background-color: blue;
+
+}
+
+.brand-logo {
+  @include span(4 of 12);
+  background-color: pink;
+  display: inline-block;
+}
+
+.navbar {
+  @include span(7 of 12);
+  height: 96px;
+  background-color: #4CAF50;
+}
+
+.member {
+  @include span(2 of 12);
+}
+
+@include nested(7) {
+  ul, li {
+    @include span(6 wide);
+    background-color: #428bca;
+  }
+  .search {
+    @include span(1 last);
+    background-color: #9ca473;
+  }
+}
+
+.cover-title {
+  @include container;
+
+}

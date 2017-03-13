@@ -1,0 +1,55 @@
+.md-button {
+  color: $primary-color-dark;
+  margin: 0;
+  padding-left: $base-line-height/2;
+  padding-right: $base-line-height/2;
+}
+
+.md-raised {
+  //line-height: $base-line-height;
+  //padding: $base-line-height/2 $base-line-height;
+  &:hover {
+    box-shadow: $whiteframe-shadow-8dp;
+  }
+}
+
+// Custom buttons
+[class*="button__icon-"] {
+  font-size: $fs-small;
+
+  &:before {
+    font-family: FontAwesome;
+    width: $base-line-height;
+    height: $base-line-height;
+    margin-right: $base-line-height/3;
+  }
+}
+
+.button__icon-download {
+  &:before {
+    content: '\f019';
+  }
+}
+
+.button__icon-booking {
+  background-color: $primary-color;
+  color: $primary-color-light;
+  &:hover {
+    color: $primary-color-dark;
+  }
+  &:before {
+    content: '\f274';
+  }
+}
+
+.button__large {
+  padding: $fs-regular $base-line-height;
+  margin: 0;
+  width: auto;
+}
+
+.button__link {
+  padding: 0;
+  margin: 0 $base-line-height*2 0 0;
+  color: inherit;
+}

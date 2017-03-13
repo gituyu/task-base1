@@ -1,0 +1,100 @@
+.dock {
+  @include clearfix;
+  @include background($primary-color-light);
+  @include display(flex);
+  flex-flow: column;
+  height: 100vh;
+  > [class*="dock__"] {
+    width: 100%;
+  }
+
+  .dock__header {
+    background: #fff;
+    box-shadow: $whiteframe-shadow-2dp;
+    height: $md-toolbar-padding*4;
+
+    md-icon {
+      color: inherit;
+      line-height: $base-line-height;
+      height: $base-line-height;
+    }
+    .md-button, .menu-item, md-input-container {
+      display: inline-block;
+      color: $primary-text-color;
+      line-height: $base-line-height;
+      margin: $base-line-height/2 $md-toolbar-padding/2;
+      padding: $md-toolbar-padding/2;
+
+      min-height: $base-line-height;
+      height: auto;
+    }
+
+    // Logo
+    logo {
+      border-right: 1px solid rgba($divider-color, .2);
+      background: $primary-color-light;
+
+      .md-button {
+        md-icon {
+          width: 96px;
+        }
+      }
+    }
+
+    // Filters
+    md-input-container {
+      color: $secondary-text-color;
+
+      md-icon {
+        width: $base-line-height*2;
+        text-align: center;
+      }
+      .md-input, .md-select-value {
+        border: none;
+        padding: 0;
+        font-size: $fs-regular;
+        line-height: $base-line-height;
+        height: $base-line-height;
+      }
+      &.input__icon {
+        padding-left: $base-line-height*2;
+      }
+
+      &:not(:first-child) {
+        border-right: 1px solid $divider-color;
+      }
+    }
+
+    // Navbar
+    navbar {
+      .nav {
+        > .menu-item {
+          &.active {
+            color: $primary-color;
+            line-height: $base-line-height;
+          }
+        }
+        .menu-item__hamburger {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .dock__body {
+    flex: 1;
+
+    .card__holder {
+      @include span(100%/3);
+      margin: 0;
+    }
+
+    .cardbox {
+      @include position(fixed, $md-toolbar-padding*4 0 0 0);
+      height: calc(100% - (#{($md-toolbar-padding)} * 4));
+    }
+  }
+}
+
+.dock__grid {
+}
